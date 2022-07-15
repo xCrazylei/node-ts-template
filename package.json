@@ -1,0 +1,23 @@
+{
+  "name": "node-ts-template",
+  "version": "1.0.0",
+  "main": "./lib/src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc ",
+    "watch": "rm -rf ./lib && tsc -w",
+    "start": "yarn build && node ./lib/src/app.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.4",
+    "@types/request-promise": "^4.1.48",
+    "@types/uuid": "^8.3.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "uuid": "^8.3.2"
+  }
+}
